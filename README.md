@@ -1,6 +1,6 @@
 # tourism
 
-> A Vue.js project
+> 仿照去哪儿网APP project
 
 ## Build Setup
 
