@@ -81,5 +81,5 @@ export default {
           text-align center
           overflow hidden
           white-space nowrap
-          text-overflow ellipsis              
+          text-overflow ellipsis
 </style>

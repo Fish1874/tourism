@@ -8,14 +8,14 @@
               <p>{{ item.text }}</p>
           </div>
       </div>
-  </div>  
+  </div>
 </template>
 
 <script>
 export default {
   name: 'HomeRecommend',
   props: {
-    list:Array
+    list: Array
   }
 }
 </script>
@@ -38,7 +38,7 @@ export default {
                 width 100%
         .recommend-text
             height 0
-            padding-bottom 12%
+            padding-bottom 14%
             line-height .25rem
             padding-left .2rem
             span
@@ -47,5 +47,5 @@ export default {
             p
                 overflow hidden
                 white-space nowrap
-                text-overflow ellipsis    
+                text-overflow ellipsis
 </style>

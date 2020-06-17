@@ -5,10 +5,10 @@
         </div>
         <div class='header-middle'>
             <i class='iconfont iconsousuo'></i>
-            输入城市/景点/游玩主题
+            <input class='header-input' type="text" placeholder='输入城市/景点/游玩主题'>
         </div>
         <div class='header-right'>
-            北京
+            <span>北京</span>
             <i class='iconfont iconjiantou'></i>
         </div>
     </div>
@@ -36,7 +36,7 @@ export default {
             .icondenglu
                 font-size .3rem
         .header-middle
-            width 3.1rem
+            width 2.55rem
             height 0.2rem
             background #fff
             border-radius 5px
@@ -44,6 +44,11 @@ export default {
             padding 0.07rem 0.1rem 0.03rem
             font-size 0.15rem
             color #E8E9EB
+            .header-input
+                width 2.2rem
+                position relative
+                top -0.02rem
+                padding-left 0.01rem
         .header-right
             width 0.5rem
             font-size 0.15rem
@@ -53,6 +58,12 @@ export default {
             overflow hidden
             text-overflow ellipsis
             white-space nowrap;
+            span
+                display inline-block
+                width 0.35rem
+                overflow hidden
+                white-space nowrap
+                text-overflow ellipsis
             .iconjiantou
                 position absolute
                 right 0

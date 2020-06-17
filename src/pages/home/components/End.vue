@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name:'HomeEnd'
+  name: 'HomeEnd'
 }
 </script>
 
@@ -49,7 +49,7 @@ export default {
         height 0.33rem
         display flex
         justify-content space-between
-        a 
+        a
             margin-left 0.1rem
     p
         width 100%
