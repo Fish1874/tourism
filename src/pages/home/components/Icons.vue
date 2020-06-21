@@ -12,7 +12,7 @@
         <div class='pos'>
           <div class='pos-left'>
             <i class='iconfont icondizhi'></i>
-            定位失败
+            {{this.$store.state.city}}
           </div>
           <div class='pos-right'>
             <i class='iconfont icon943caidan_jipiao'></i>

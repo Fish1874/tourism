@@ -7,16 +7,22 @@
             <i class='iconfont iconsousuo'></i>
             <input class='header-input' type="text" placeholder='输入城市/景点/游玩主题'>
         </div>
-        <div class='header-right'>
-            <span>北京</span>
-            <i class='iconfont iconjiantou'></i>
-        </div>
+        <router-link to='/city'>
+            <div class='header-right'>
+                <span>{{ this.city }}</span>
+                <i class='iconfont iconjiantou'></i>
+            </div>
+        </router-link>
     </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  computed: {
+    ...mapState(['city'])
+  }
 }
 
 </script>
@@ -58,6 +64,7 @@ export default {
             overflow hidden
             text-overflow ellipsis
             white-space nowrap;
+            color #fff
             span
                 display inline-block
                 width 0.35rem
