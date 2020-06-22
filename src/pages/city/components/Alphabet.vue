@@ -28,8 +28,13 @@ export default {
   },
   data () {
     return {
-      touchStatus: false
+      touchStatus: false,
+      startY: 0,
+      timer: null
     }
+  },
+  updated () { // 当页面的数据被更新的时候，同时页面完成渲染，updated就会被执行
+    this.startY = this.$refs['A'][0].offsetTop
   },
   methods: {
     handleLetterClick (e) {
@@ -40,14 +45,18 @@ export default {
       this.touchStatus = true
     },
     handleTouchMove (e) { // 滑动字母，区域跟着变
-      if (this.touchStatus) {
-        const startY = this.$refs['A'][0].offsetTop
-        const touchY = e.touches[0].clientY - 79
-        const index = Math.floor((touchY - startY) / 20)
-        // console.log(index)
-        if (index >= 0 && index < this.letters.length) {
-          this.$emit('change', this.letters[index])
+      if (this.touchStatus) { // 通过函数节流， 减少handleTouchMove函数的执行频率，大大提高网页的性能
+        if (this.timer) {
+          clearTimeout(this.timer)
         }
+        this.timer = setTimeout(() => {
+          const touchY = e.touches[0].clientY - 79
+          const index = Math.floor((touchY - this.startY) / 20)
+          // console.log(index)
+          if (index >= 0 && index < this.letters.length) {
+            this.$emit('change', this.letters[index])
+          }
+        }, 6) // 函数节流, 如果在6毫秒内, 你又滑动了手指 就会把上一次的操作清除掉, 重新执行这次的操作
       }
     },
     handleTouchEnd () {
