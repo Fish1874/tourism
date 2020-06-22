@@ -1,13 +1,17 @@
 <template>
   <div class='recommend'>
       <h2>周末去哪儿</h2>
-      <div v-for='item of list' :key='item.id'>
-          <div class='recommend-img'><img :src="item.imgUrl"></div>
-          <div class='recommend-text'>
-              <span>{{ item.headline }}</span>
-              <p>{{ item.text }}</p>
-          </div>
-      </div>
+      <router-link tag='div'
+                   v-for='item of list'
+                   :key='item.id'
+                   :to="'/detail/' + item.id"
+      >
+        <div class='recommend-img'><img :src="item.imgUrl"></div>
+        <div class='recommend-text'>
+            <span>{{ item.headline }}</span>
+            <p>{{ item.text }}</p>
+        </div>
+      </router-link>
   </div>
 </template>
 

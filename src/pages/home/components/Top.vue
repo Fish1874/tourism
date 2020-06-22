@@ -11,11 +11,11 @@
           </p>
       </div>
       <ul class='tops-bottom'>
-        <li class='bottom-content' v-for='item of list' :key='item.id'>
+        <router-link tag='li' class='bottom-content' v-for='item of list' :key='item.id' :to="'/detail/' + item.id">
           <div class='bottom-top-img' v-if='item.img'><img :src="item.img"></div>
           <div class='bottom-img'><img :src="item.imgUrl"></div>
           <p>{{ item.desc }}</p>
-        </li>
+        </router-link>
       </ul>
   </div>
 </template>
