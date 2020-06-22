@@ -40,27 +40,26 @@ npm run build --report
 |  |  └──gallary                            // 之所以创建这个文件夹，万一以后组件越来越大的时候，可以拆分成多个小组件 
 |  |  |  └──Gallary.vue                     // 使用swiper实现banner的逻辑
 |  └──pages                                 // 放所有网页的组件
-|  |  └──home                               // 主页
-|  |  |  └──Home.vue                        // 
+|  |  └──home                               // 主页文件夹
+|  |  |  └──Home.vue                        // 主组件
 |  |  |  └──components                      // 放整个Home页面每个部分的组件
-|  |  |  |  └──Header.vue                   // 页面的顶部 搜索框 
-|  |  |  |  └──Swiper.vue                   // 轮播图 使用swiper插件
+|  |  |  |  └──Header.vue                   // 页面的顶部 搜索框
 |  |  |  |  └──Icons.vue                    // 图标区
-|  |  |  |  └──Recommend.vue                // 推荐旅游区
-|  |  |  |  └──Weekend.vue                  // 周末旅游区
+|  |  |  |  └──TOP.vue                      // 热门榜单
+|  |  |  |  └──End.vue                      // 尾部区域
 |  |  └──detail                             // 详情页
 |  |  |  └──Detail.vue                      //
 |  |  |  └──components                      // 放整个Detail页面每个部分的组件
 |  |  |  |  └──Header.vue                   //
 |  |  |  |  └──Banner.vue                   //
 |  |  |  |  └──List.vue                     //
-|  |  └──city                               // 城市页
-|  |  |  └──City.vue                        //
+|  |  └──city                               // 城市页文件夹
+|  |  |  └──City.vue                        // 主组件
 |  |  |  └──components                      // 放整个City页面每个部分的组件
-|  |  |  |  └──Header.vue                   //
-|  |  |  |  └──Search.vue                   //
-|  |  |  |  └──Alphabet.vue                 //
-|  |  |  |  └──List.vue                     //
+|  |  |  |  └──Header.vue                   // 头部组件
+|  |  |  |  └──Search.vue                   // 搜索组件
+|  |  |  |  └──Alphabet.vue                 // 字母区域
+|  |  |  |  └──List.vue                     // 列表区域
 |  └──router                                // 路由文件夹
 |  |  └──index.js                           // 设置切换页面
 |  └──store                                 // 使用vuex共享数据
