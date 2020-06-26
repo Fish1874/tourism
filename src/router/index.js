@@ -21,6 +21,11 @@ export default new Router({
       path: '/detail/:id',
       name: 'Detail',
       component: () => import('@/pages/detail/Detail')
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: () => import('@/pages/login/Login')
     }
   ],
   scrollBehavior (to, from, savedPosition) { // 意思是每次进入初始化页面，X轴为0 Y轴也为0

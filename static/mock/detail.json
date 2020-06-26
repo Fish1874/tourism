@@ -5,6 +5,7 @@
     "bannerImg": "http:////img1.qunarzz.com/sight/p0/2003/b9/b9cc3ab2fbe4f0e7a3.water.jpg_600x330_dbc03959.jpg",
     "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1904/f0/f05200e6e252059ea3.img.jpg_r_800x800_460b4db1.jpg","http://img1.qunarzz.com/sight/p0/1812/a4/a472cbac7838b253a3.img.jpg_r_800x800_65baccec.jpg", "http://img1.qunarzz.com/sight/p0/1907/e1/e1f036540e4dacd6a3.water.jpg_r_800x800_8322079c.jpg"],
     "categoryList": [{
+        "id": "1",
         "title": "成人票",
         "children": [{
           "title": "成人三馆联票",
@@ -15,10 +16,13 @@
           "title": "成人五馆联票"
         }]
       }, {
+        "id": "2",
         "title": "学生票"
       }, {
+        "id": "3",
         "title": "儿童票"
       }, {
+        "id": "4",
         "title": "特惠票"
       }]
   }

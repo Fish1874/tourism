@@ -19,7 +19,9 @@
             </ul>
         </div>
         <div class='end-bottom'>
-            <a href="#">登录</a>
+            <router-link to='/login'>
+                <a href="#">登录</a>
+            </router-link>
             <a href="#">我的订单</a>
             <a href="#">最近浏览</a>
             <a href="#">关于我们</a>
@@ -50,7 +52,8 @@ export default {
         display flex
         justify-content space-between
         a
-            margin-left 0.1rem
+            margin-left 0.05rem
+            margin-right 0.05rem
     p
         width 100%
         text-align center

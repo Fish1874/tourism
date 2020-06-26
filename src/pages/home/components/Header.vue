@@ -1,8 +1,10 @@
 <template>
     <div class='header'>
-        <div class='header-left'>
-            <i class='iconfont icondenglu'></i>
-        </div>
+        <router-link to='/login'>
+            <div class='header-left'>
+                <i class='iconfont icondenglu'></i>
+            </div>
+        </router-link>
         <div class='header-middle'>
             <i class='iconfont iconsousuo'></i>
             <input class='header-input' type="text" placeholder='输入城市/景点/游玩主题'>
@@ -41,6 +43,7 @@ export default {
             line-height .45rem
             .icondenglu
                 font-size .3rem
+                color #fff
         .header-middle
             width 2.55rem
             height 0.2rem
