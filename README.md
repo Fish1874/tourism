@@ -48,11 +48,8 @@ npm run build --report
 |  |  |  |  └──TOP.vue                      // 热门榜单
 |  |  |  |  └──End.vue                      // 尾部区域
 |  |  └──detail                             // 详情页
-|  |  |  └──Detail.vue                      //
+|  |  |  └──Detail.vue                      // 详情页主组件
 |  |  |  └──components                      // 放整个Detail页面每个部分的组件
-|  |  |  |  └──Header.vue                   //
-|  |  |  |  └──Banner.vue                   //
-|  |  |  |  └──List.vue                     //
 |  |  └──city                               // 城市页文件夹
 |  |  |  └──City.vue                        // 主组件
 |  |  |  └──components                      // 放整个City页面每个部分的组件
@@ -60,6 +57,7 @@ npm run build --report
 |  |  |  |  └──Search.vue                   // 搜索组件
 |  |  |  |  └──Alphabet.vue                 // 字母区域
 |  |  |  |  └──List.vue                     // 列表区域
+|  |  └──login                              // 登录页
 |  └──router                                // 路由文件夹
 |  |  └──index.js                           // 设置切换页面
 |  └──store                                 // 使用vuex共享数据
