@@ -62,7 +62,7 @@ export default {
             .icongonggao
                 color $bgColor
     .lists-bottom
-        width 3.58rem
+        width 95%
         margin-top 0.18rem
         margin-left 0.08rem
         margin-bottom 0.5rem

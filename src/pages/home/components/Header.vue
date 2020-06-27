@@ -1,6 +1,6 @@
 <template>
     <div class='header'>
-        <router-link to='/login'>
+        <router-link to='/login' id='left'>
             <div class='header-left'>
                 <i class='iconfont icondenglu'></i>
             </div>
@@ -9,7 +9,7 @@
             <i class='iconfont iconsousuo'></i>
             <input class='header-input' type="text" placeholder='输入城市/景点/游玩主题'>
         </div>
-        <router-link to='/city'>
+        <router-link to='/city' id='right'>
             <div class='header-right'>
                 <span>{{ this.city }}</span>
                 <i class='iconfont iconjiantou'></i>
@@ -37,6 +37,10 @@ export default {
         background $bgColor
         display flex
         color #fff
+        #left
+            flex 0.5
+        #right
+            flex 1
         .header-left
             width 0.4rem
             text-align center
@@ -45,6 +49,7 @@ export default {
                 font-size .3rem
                 color #fff
         .header-middle
+            flex 4
             width 2.55rem
             height 0.2rem
             background #fff
@@ -54,7 +59,7 @@ export default {
             font-size 0.15rem
             color #E8E9EB
             .header-input
-                width 2.2rem
+                width 80%
                 position relative
                 top -0.02rem
                 padding-left 0.01rem

@@ -46,7 +46,14 @@ export default {
     }
   },
   mounted () { // 等挂载完成之后，再创建这个插件，使之可以拖动
-    this.scroll = new Bscroll(this.$refs.wrapper)
+    const options = {
+      scrollY: true,
+      scrollX: false,
+      mouseWheel: true,
+      click: true,
+      taps: true
+    }
+    this.scroll = new Bscroll(this.$refs.wrapper, options)
   },
   watch: { // 借助监听器来监听letter的变化
     letter () {

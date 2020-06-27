@@ -37,6 +37,9 @@ export default {
 <style lang='stylus' scoped>
 
     .end
+        position relative
+        bottom 0
+        width 100%
         height 1.8rem
         font-size 0.15rem
         background #F5F5F5
