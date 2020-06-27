@@ -5,12 +5,13 @@ import City from '@/pages/city/City.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
       name: 'Home',
       component: Home
+      // redirect: '/login' 路由重定向，每次访问 /  则重定向到/login页
     },
     {
       path: '/city',
@@ -32,3 +33,16 @@ export default new Router({
     return {x: 0, y: 0}
   }
 })
+
+// 挂载路由守卫
+// router.beforeEach((to, from, next) => {
+//   // to表示将要访问的路径， from 从哪个路径来， next 表示放行
+//   if (to.path === '/login') return next()
+//   const tokenStr = window.sessionStorage.getItem('token')
+//   if (!tokenStr) {
+//     return next('/login')
+//   }
+//   next()
+// })
+
+export default router

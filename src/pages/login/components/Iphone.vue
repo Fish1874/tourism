@@ -10,7 +10,7 @@
                     <label>验证码</label>
                     <div class='control-inp' id='validation-code'>
                         <input type="text" placeholder='请输入验证码'>
-                        <a href="#">获取验证码</a>
+                        <button href="#">获取验证码</button>
                     </div>
                 </div>
             </form>
@@ -62,7 +62,7 @@ export default {
                             position absolute
                             top 0.1rem
                             width 50%
-                        a
+                        button
                             display inline-block
                             position absolute
                             top 0.08rem
@@ -71,7 +71,7 @@ export default {
                             height 0.28rem
                             line-height 0.28rem
                             text-align center
-                            color #d7dce0
+                            color grey
                             border 0.01rem solid #ccc
                             border-radius 0.05rem
             .btn
@@ -83,6 +83,7 @@ export default {
                     width 90%
                     height 100%
                     border 0.01rem solid #85D1DB
+                    border-radius 0.05rem
                     background #85D1DB
                     font-size 0.2rem
                     color #fff
